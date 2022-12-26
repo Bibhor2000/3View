@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import firebase from 'firebase/app';
+import firebase from 'firebase/compat/app';
 import 'firebase/database';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -27,4 +27,4 @@ const database = firebase.database();
 const storage = getStorage();
 const piranhaShip = ref(storage, 'gs://view-5a6a6.appspot.com/piranha.glb')
 
-export default {database, storage};
+export default {database, storage, analytics};
